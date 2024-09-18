@@ -1,0 +1,91 @@
+
+body{
+font-family: Verdana, Geneva, sans-serif;
+
+  font-weight: bold;
+font-size: 18px;
+
+}
+
+p{
+font-family: Verdana, Geneva, sans-serif;
+
+  font-weight: bold;
+font-size: 17px;
+
+}
+
+
+#aW{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+#aNum{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+#aNL{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+
+#a{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+#b{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+
+#bNL{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+#bNum{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+#bW{
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+
+div {
+font-family: Verdana, Geneva, sans-serif;
+
+  text-align: center;
+font-size: 17px;
+  font-weight: bold;
+}
+
+#info{
+  background-color: white;
+  color: blue;
+font-size: 18px;
+  font-weight: bold;
+font-family: Verdana, Geneva, sans-serif;
+
+}
+
+h1{
+  border: 1px solid black;
+  margin-bottom: 10px;
+color: orange;
+font-family: Verdana, Geneva, sans-serif;
+
+}
+
+#copy{
+  background-color: blue;
+  color: white;
+font-size: 17px;
+  font-weight: bold;
+font-family: Verdana, Geneva, sans-serif;
+
+}
+

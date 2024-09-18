@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+justRepeatIt.club
+</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168922840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168922840-1');
+</script>
+
+        <link rel="stylesheet" href="mystyle.css">
+<script src="index.js"></script>
+
+    </head>
+    <body>
+
+                <div class="container text-capitalize" style="position:fixed; top:0px;">
+<div class='row'>
+<div class='col-xs-12'>
+
+ <button type="button" style="margin-left : 75% ; " class="btn btn-primary" id='mybtn'> 
+    <i class="fa fa-bars"> Menu </i>
+                </button>
+    
+    
+    <div style="padding-left: 10px; width: 100% ; border: 2px dotted dashed solid DodgerBlue ; background-color : black ; font-size: 18px; font-weight: bold;" class="container d-flex align-items-end" id='mydiv' hidden>
+
+        <hr/>
+<a href='calculator.html' style="color: red ; ">    refresh</a>
+
+<br/><br/><a style="color:orange;" href="calculator.html" >    Age Calculator </a>
+
+<br/><br/><a style="color:orange;" href="countdown.html" >    Event CountDownTimer </a>
+
+<br/><br/><a style="color:orange;" href="game.html" >    Games </a>
+
+<br/><br/><a style="color: white ;" href="https://www.facebook.com" >    share Fb </a>
+        
+<br/><br/><a style="color: yellow ;" href="whatsapp://send?text= %20" data-action="share/whatsapp/share" >    share whatsApp </a>
+
+        <br/><br/><a href='about.html' >    About page</a>
+        
+        <br/><br/><a href='contact.html' >    Contact Us</a>
+        
+        <br/><br/><a href='privacy.html' >    Privacy page</a>
+        
+        <br/><br/><a href='tnc.html' >    terms&conditions </a>
+
+<hr/>
+
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-3">
+
+<a href='index.html'>
+<img class="img-responsive img-thumbnail" src="imgs/logo.png" alt="logo" style="hight: 81px; width: 154px;">
+</a>
+</div>
+
+  <div class="col-xs-9">
+      
+<h5> Welcome in Just Repeat It </h5>      
+      </div>
+
+</div>
+</div>
+<hr/>
+
+<h1> Age Calculator </h1>
+
+<div class="container">
+
+<hr/>
+<input type='number' id='year' placeholder='yyyy' />
+<br/>
+<input type='number' id='month' placeholder='mm' />
+<br/>
+<input type='number' id='date' placeholder='dd' />
+<br/>
+<hr/>
+
+
+<button onclick='date();'>
+click
+</button>
+
+<div id='result'>
+</div>
+
+<footer id='footer'>
+                <div class="copyright">
+                    <p>© 2020-21 All Rights Reserved. JustRepeatIt.club </p>
+                </div>
+</footer>
+
+                </div>
+
+<script>
+
+function date(){
+
+var y= document.getElementById('year').value
+var m= document.getElementById('month').value
+var d= document.getElementById('date').value
+
+
+document.getElementById('result').innerHTML= "<h1> <b> you are "+ (getAge(new Date(y+", "+m+", "+d)))+ " years old right now</b> </h1>";
+
+}
+
+
+function getAge(d1, d2){
+
+    d2 = d2 || new Date();
+    var diff = d2.getTime() - d1.getTime();
+
+var y1= diff / (1000 * 60 * 60 * 24 * 365.25)
+
+    return Math.floor(y1);
+
+}
+
+
+
+$("#mybtn").click(function(){
+  $("#mydiv").slideToggle(750);
+});
+</script>
+
+
+    </body>
+</html>
